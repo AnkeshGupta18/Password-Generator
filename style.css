@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+.main {
+    background-color: #3498db;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+    background: #2980b9;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#pass-box {
+    width: 100%;
+    display: block;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: white;
+    font-size: 18px;
+}
+
+label {
+    user-select: none;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#total-char {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#btn {
+    width: 100%;
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#strength-bar {
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 16px;
+}
+
+.copy-container {
+    margin-top: 15px;
+}
+
+#copy-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #16a085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#theme-toggle {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    .row {
+        font-size: 16px;
+    }
+
+    #pass-box {
+        font-size: 24px;
+    }
+
+    #btn {
+        font-size: 16px;
+    }
+
+    .left, .right {
+        font-size: 14px;
+    }
+
+    #total-char {
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .box {
+    background: #2c3e50;
+}
+
+.dark-theme #btn {
+    background-color: #34495e;
+}
+
+.dark-theme #pass-box {
+    background-color: #fff;
+    color: #333;
+}
